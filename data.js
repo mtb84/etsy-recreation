@@ -1,3 +1,6 @@
+// const source = document.querySelector("#etsy-template").innerHTML;
+// const template = Handlebars.compile(source);
+
 const data = {
   count: 50100,
   results: [
@@ -9375,20 +9378,6 @@ const data = {
   ok: true,
 };
 
-let template = Handlebars.compile(document.querySelector('#etsy-template'));
-let filled = template(data);
+// const final = document.querySelector(".container");
 
-// const source = document.getElementById("etsy-template").innerHTML;
-// const template = Handlebars.compile(source); // returns function
-
-// const context = {
-//     students: [
-//         {firstName: "Levi", lastName: "Shevick" },
-//         {firstName: "Matthew", lastName: "Barton"},
-//         {firstName: "Will", lastName: "Braun"},
-//     ]
-// }
-
-// const html = template(data);
-
-// document.querySelector(".container").innerHTML = html;
+// final.innerHTML = template(source);
