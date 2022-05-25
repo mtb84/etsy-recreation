@@ -19,11 +19,10 @@ const merchandise = {
       Made_When: "Made to Order",
       sku: "[none]"
     }
-  ],
+  ]
 };
 
 
 
 const final = document.querySelector(".container");
-
 final.innerHTML = template(merchandise);

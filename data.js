@@ -1,5 +1,5 @@
-// const source = document.querySelector("#etsy-template").innerHTML;
-// const template = Handlebars.compile(source);
+const source = document.querySelector("#etsy-template").innerHTML;
+const template = Handlebars.compile(source);
 
 const data = {
   count: 50100,
@@ -9378,6 +9378,5 @@ const data = {
   ok: true,
 };
 
-// const final = document.querySelector(".container");
-
-// final.innerHTML = template(source);
+const final = document.querySelector(".container");
+final.innerHTML = template(data);
