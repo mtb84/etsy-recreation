@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etsy Recreation</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="normalize.css" />
+  </head>
+  <body>
+    <div class="container"></div>
+
+    <script id="etsy-template" type="text/x-handlebars-template">
+      {{#each items}}
+      <ul> 
+      <li class="item">
+          <h2>{{title}}</h2>
+          <p>Price: {{price}}{{Currency_Code}}</p>
+          <p>Made: {{Made_When}}</p>
+          <p>Sku: {{sku}}</p>
+
+        </li>
+      </ul>
+      {{/each}}
+
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js" integrity="sha512-RNLkV3d+aLtfcpEyFG8jRbnWHxUqVZozacROI4J2F1sTaDqo1dPQYs01OMi1t1w9Y2FdbSCDSQ2ZVdAC8bzgAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
